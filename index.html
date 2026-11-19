@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jewelry Box Douala</title>
+<meta name="description" content="Bijoux fantaisie à Douala. Bagues et colliers 2 500 FCFA, bracelets 3 000 FCFA, boucles dès 2 000 FCFA. Commande sur WhatsApp." />
+<meta property="og:title" content="Jewelry Box · Douala" />
+<meta property="og:description" content="Bijoux fantaisie dès 2 000 FCFA. Commande sur WhatsApp, livraison à Douala, expédition partout au Cameroun." />
+<meta property="og:image" content="https://jewelsboxdeals-sys.github.io/jewelrybox/images/E35.jpg" />
+<meta name="theme-color" content="#0d2b22" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0d2b22; --bg-deep: #071a14; --card: #10342a;
+    --line: rgba(217,178,90,.28); --fg: #f4ead6; --muted: #b9c2b4;
+    --gold: #d9b25a; --gold-soft: #efd28f; --gold-ink: #1c1407;
+    --wa: #25d366; --wa-ink: #062b14;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh; color: var(--fg);
+    background: radial-gradient(120% 70% at 50% 0%, #164536 0%, var(--bg) 45%, var(--bg-deep) 100%) fixed, var(--bg);
+    font: 16px/1.5 Montserrat, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 460px; margin: 0 auto; padding: 36px 16px 40px; text-align: center; }
+  .lang { position: absolute; top: 14px; right: 16px; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { background: none; border: 0; color: var(--muted); font: 700 12px "IBM Plex Mono", monospace; padding: 7px 12px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--gold); color: var(--gold-ink); }
+  .mark {
+    width: 84px; height: 84px; margin: 0 auto 14px; border-radius: 50%;
+    display: grid; place-items: center; border: 1.5px solid var(--gold);
+    background: var(--card); color: var(--gold); font: 900 30px Montserrat; letter-spacing: .04em;
+    box-shadow: 0 0 0 6px rgba(217,178,90,.08);
+  }
+  h1 { font-weight: 900; font-size: 22px; letter-spacing: .28em; padding-left: .28em; }
+  .city { font: 400 11px "IBM Plex Mono", monospace; letter-spacing: .22em; color: var(--gold); margin-top: 4px; }
+  .tag { color: var(--muted); font-size: 14px; margin: 14px auto 22px; max-width: 34ch; }
+  .tag b { color: var(--gold-soft); font-weight: 600; }
+  .links { display: grid; gap: 12px; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px; position: relative;
+    min-height: 56px; padding: 12px 46px; border-radius: 999px; text-decoration: none;
+    font-weight: 700; font-size: 15px; letter-spacing: .02em;
+    border: 1px solid var(--line); background: rgba(16,52,42,.75); color: var(--fg);
+    transition: transform .15s ease, filter .15s ease, border-color .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: var(--gold); }
+  .btn:active { transform: scale(.98); }
+  .btn svg { position: absolute; left: 18px; width: 22px; height: 22px; fill: currentColor; }
+  .btn.wa { background: var(--wa); color: var(--wa-ink); border-color: transparent; font-size: 16px; min-height: 60px; }
+  .btn.shop { background: var(--gold); color: var(--gold-ink); border-color: transparent; }
+  .btn small { display: block; font: 400 11px "IBM Plex Mono", monospace; letter-spacing: .04em; opacity: .75; margin-top: 1px; }
+  .btn span { line-height: 1.25; }
+  h2 { font: 700 11px "IBM Plex Mono", monospace; letter-spacing: .22em; color: var(--gold); margin: 30px 0 12px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .grid a { display: block; position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 1; background: var(--card); }
+  .grid img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s ease; }
+  .grid a:hover img { transform: scale(1.06); }
+  .grid i { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 4px 4px; font: 700 10px "IBM Plex Mono", monospace; font-style: normal; color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.7)); }
+  .social { display: flex; justify-content: center; gap: 14px; margin-top: 30px; }
+  .social a { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); color: var(--fg); background: rgba(16,52,42,.75); transition: border-color .15s, color .15s; }
+  .social a:hover { border-color: var(--gold); color: var(--gold); }
+  .social svg { width: 20px; height: 20px; fill: currentColor; }
+  .info { margin-top: 26px; font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
+  footer { margin-top: 28px; font: 400 10px "IBM Plex Mono", monospace; letter-spacing: .18em; color: rgba(185,194,180,.55); }
+  [data-en] { display: none; }
+  html[lang="en"] [data-fr] { display: none; }
+  html[lang="en"] [data-en] { display: revert; }</style>
+</head>
+<body>
+<div class="lang" role="group" aria-label="Langue">
+  <button type="button" data-l="fr" aria-pressed="true">FR</button>
+  <button type="button" data-l="en" aria-pressed="false">EN</button>
+</div>
+<main>
+  <div class="mark" aria-hidden="true">JB</div>
+  <h1>JEWELRY BOX</h1>
+  <p class="city">DOUALA · CAMEROUN</p>
+  <p class="tag">
+    <span data-fr>Bijoux fantaisie dorés et argentés. Bagues et colliers <b>2 500 FCFA</b>, bracelets <b>3 000 FCFA</b>, boucles dès <b>2 000 FCFA</b>.</span>
+    <span data-en>Gold-tone and silver-tone fashion jewellery. Rings and necklaces <b>2,500 FCFA</b>, bracelets <b>3,000 FCFA</b>, earrings from <b>2,000 FCFA</b>.</span>
+  </p>
+
+  <div class="links">
+    <a class="btn wa" id="wa" href="https://wa.me/237677089626?text=Bonjour%20Jewelry%20Box%2C%20je%20veux%20commander%20%3A%20">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+      <span><span data-fr>Commander sur WhatsApp</span><span data-en>Order on WhatsApp</span><small>+237 677 08 96 26</small></span>
+    </a>
+    <a class="btn shop" href="https://jewelsboxdeals-sys.github.io/jewelrybox/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-1.2 12.1A2 2 0 0 1 15.8 21H8.2a2 2 0 0 1-2-1.9L5 7Zm3 0V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-4 0v1H8Z"/></svg>
+      <span><span data-fr>Voir toute la boutique</span><span data-en>See the full shop</span><small><span data-fr>Prix et références</span><span data-en>Prices and references</span></small></span>
+    </a>
+    <a class="btn" href="https://www.instagram.com/jewelryboxdeals/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3Zm0 7.7a3 3 0 1 1 3-3 3 3 0 0 1-3 3Zm4.9-8.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1ZM12 4.6c2.4 0 2.7 0 3.6.1a4.9 4.9 0 0 1 1.7.3 3 3 0 0 1 1.7 1.7 4.9 4.9 0 0 1 .3 1.7c.1.9.1 1.2.1 3.6s0 2.7-.1 3.6a4.9 4.9 0 0 1-.3 1.7 3 3 0 0 1-1.7 1.7 4.9 4.9 0 0 1-1.7.3c-.9.1-1.2.1-3.6.1s-2.7 0-3.6-.1a4.9 4.9 0 0 1-1.7-.3 3 3 0 0 1-1.7-1.7 4.9 4.9 0 0 1-.3-1.7c-.1-.9-.1-1.2-.1-3.6s0-2.7.1-3.6A4.9 4.9 0 0 1 5 6.7 3 3 0 0 1 6.7 5a4.9 4.9 0 0 1 1.7-.3c.9-.1 1.2-.1 3.6-.1ZM12 3c-2.4 0-2.8 0-3.7.1a6.6 6.6 0 0 0-2.2.4 4.6 4.6 0 0 0-2.6 2.6 6.6 6.6 0 0 0-.4 2.2C3 9.2 3 9.6 3 12s0 2.8.1 3.7a6.6 6.6 0 0 0 .4 2.2 4.6 4.6 0 0 0 2.6 2.6 6.6 6.6 0 0 0 2.2.4c.9.1 1.3.1 3.7.1s2.8 0 3.7-.1a6.6 6.6 0 0 0 2.2-.4 4.6 4.6 0 0 0 2.6-2.6 6.6 6.6 0 0 0 .4-2.2c.1-.9.1-1.3.1-3.7s0-2.8-.1-3.7a6.6 6.6 0 0 0-.4-2.2 4.6 4.6 0 0 0-2.6-2.6 6.6 6.6 0 0 0-2.2-.4C14.8 3 14.4 3 12 3Z"/></svg>
+      <span>Instagram</span>
+    </a>
+    <a class="btn" href="https://www.facebook.com/959034790621888">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.7h2.6l.4-3h-3V8.4c0-.9.2-1.5 1.5-1.5h1.6V4.2a21 21 0 0 0-2.3-.1c-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21Z"/></svg>
+      <span>Facebook</span>
+    </a>
+  </div>
+
+  <h2 data-fr>NOS COUPS DE CŒUR</h2><h2 data-en>OUR FAVOURITES</h2>
+  <div class="grid">
+    <a href="https://jewelsboxdeals-sys.github.io/jewelrybox/#R19"><img src="https://jewelsboxdeals-sys.github.io/jewelrybox/images/R19.jpg" alt="Bague R19" loading="lazy"><i>R19</i></a>
+    <a href="https://jewelsboxdeals-sys.github.io/jewelrybox/#E35"><img src="https://jewelsboxdeals-sys.github.io/jewelrybox/images/E35.jpg" alt="Boucles E35" loading="lazy"><i>E35</i></a>
+    <a href="https://jewelsboxdeals-sys.github.io/jewelrybox/#N1"><img src="https://jewelsboxdeals-sys.github.io/jewelrybox/images/N1.jpg" alt="Collier N1" loading="lazy"><i>N1</i></a>
+    <a href="https://jewelsboxdeals-sys.github.io/jewelrybox/#A6"><img src="https://jewelsboxdeals-sys.github.io/jewelrybox/images/A6.jpg" alt="Bracelet A6" loading="lazy"><i>A6</i></a>
+  </div>
+
+  <div class="info">
+    <p data-fr>📍 Livraison à Douala · expédition partout au Cameroun</p>
+    <p data-en>📍 Delivery in Douala · shipping across Cameroon</p>
+    <p data-fr>Envoie-nous la référence (ex. R19) sur WhatsApp pour commander.</p>
+    <p data-en>Send us the reference (e.g. R19) on WhatsApp to order.</p>
+  </div>
+
+  <nav class="social" aria-label="Réseaux">
+    <a href="https://www.instagram.com/jewelryboxdeals/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3Zm0 7.7a3 3 0 1 1 3-3 3 3 0 0 1-3 3Zm4.9-8.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1ZM12 3c-2.4 0-2.8 0-3.7.1a6.6 6.6 0 0 0-2.2.4 4.6 4.6 0 0 0-2.6 2.6 6.6 6.6 0 0 0-.4 2.2C3 9.2 3 9.6 3 12s0 2.8.1 3.7a6.6 6.6 0 0 0 .4 2.2 4.6 4.6 0 0 0 2.6 2.6 6.6 6.6 0 0 0 2.2.4c.9.1 1.3.1 3.7.1s2.8 0 3.7-.1a6.6 6.6 0 0 0 2.2-.4 4.6 4.6 0 0 0 2.6-2.6 6.6 6.6 0 0 0 .4-2.2c.1-.9.1-1.3.1-3.7s0-2.8-.1-3.7a6.6 6.6 0 0 0-.4-2.2 4.6 4.6 0 0 0-2.6-2.6 6.6 6.6 0 0 0-2.2-.4C14.8 3 14.4 3 12 3Z"/></svg></a>
+    <a href="https://www.facebook.com/959034790621888" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.7h2.6l.4-3h-3V8.4c0-.9.2-1.5 1.5-1.5h1.6V4.2a21 21 0 0 0-2.3-.1c-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21Z"/></svg></a>
+    <a href="https://wa.me/237677089626" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></a>
+  </nav>
+
+  <footer>© JEWELRY BOX · DOUALA</footer>
+</main>
+<script>
+  const WA = { fr: "Bonjour Jewelry Box, je veux commander : ", en: "Hello Jewelry Box, I'd like to order: " };
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === l));
+    document.getElementById("wa").href = "https://wa.me/237677089626?text=" + encodeURIComponent(WA[l]);
+    try { localStorage.setItem("jb-lang", l); } catch (e) {}
+  }
+  document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.l)));
+  let saved = null; try { saved = localStorage.getItem("jb-lang"); } catch (e) {}
+  setLang(saved || "fr");
+</script>
+</body>
+</html>
